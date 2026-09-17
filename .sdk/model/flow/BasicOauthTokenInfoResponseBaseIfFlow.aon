@@ -1,0 +1,18 @@
+# BasicOauthTokenInfoResponseBaseIfFlow
+
+main: kit: flow: BasicOauthTokenInfoResponseBaseIfFlow:
+{
+  entity: "oauth_token_info_response_base_if",
+  kind: "basic",
+  name: "BasicOauthTokenInfoResponseBaseIfFlow",
+  step: [
+    {
+      input: {
+        ref: "oauth_token_info_response_base_if_ref01"
+      }
+
+      op: "create"
+    }
+  ],
+  "key$": "BasicOauthTokenInfoResponseBaseIfFlow"
+}
