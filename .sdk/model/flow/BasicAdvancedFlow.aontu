@@ -1,0 +1,18 @@
+# BasicAdvancedFlow
+
+main: kit: flow: BasicAdvancedFlow:
+{
+  entity: "advanced",
+  kind: "basic",
+  name: "BasicAdvancedFlow",
+  step: [
+    {
+      i: {
+        ref: "advanced_ref01"
+      }
+
+      o: "create"
+    }
+  ],
+  "key$": "BasicAdvancedFlow"
+}

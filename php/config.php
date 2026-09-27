@@ -195,7 +195,6 @@ class HubspotAuthConfig
               'name' => 'create',
               'points' => [
                 [
-                  'args' => [],
                   'kind' => 'http',
                   'method' => 'POST',
                   'orig' => '/oauth/2026-09/token/revoke',
@@ -213,17 +212,19 @@ class HubspotAuthConfig
                       'lit' => 'revoke',
                     ],
                   ],
-                  'select' => [],
-                  'transform' => [
-                    'req' => '`reqdata`',
-                    'res' => '`body`',
-                  ],
                   'parts' => [
                     'oauth',
                     '2026-09',
                     'token',
                     'revoke',
                   ],
+                  'rename' => [],
+                  'transform' => [
+                    'req' => '`reqdata`',
+                    'res' => '`body`',
+                  ],
+                  'args' => [],
+                  'select' => [],
                 ],
               ],
             ],
@@ -241,7 +242,6 @@ class HubspotAuthConfig
               'name' => 'create',
               'points' => [
                 [
-                  'args' => [],
                   'kind' => 'http',
                   'method' => 'POST',
                   'orig' => '/oauth/2026-09/token/introspect',
@@ -259,17 +259,19 @@ class HubspotAuthConfig
                       'lit' => 'introspect',
                     ],
                   ],
-                  'select' => [],
-                  'transform' => [
-                    'req' => '`reqdata`',
-                    'res' => '`body`',
-                  ],
                   'parts' => [
                     'oauth',
                     '2026-09',
                     'token',
                     'introspect',
                   ],
+                  'rename' => [],
+                  'transform' => [
+                    'req' => '`reqdata`',
+                    'res' => '`body`',
+                  ],
+                  'args' => [],
+                  'select' => [],
                 ],
               ],
             ],
@@ -287,7 +289,6 @@ class HubspotAuthConfig
               'name' => 'create',
               'points' => [
                 [
-                  'args' => [],
                   'kind' => 'http',
                   'method' => 'POST',
                   'orig' => '/oauth/2026-09/token',
@@ -302,16 +303,18 @@ class HubspotAuthConfig
                       'lit' => 'token',
                     ],
                   ],
-                  'select' => [],
-                  'transform' => [
-                    'req' => '`reqdata`',
-                    'res' => '`body`',
-                  ],
                   'parts' => [
                     'oauth',
                     '2026-09',
                     'token',
                   ],
+                  'rename' => [],
+                  'transform' => [
+                    'req' => '`reqdata`',
+                    'res' => '`body`',
+                  ],
+                  'args' => [],
+                  'select' => [],
                 ],
               ],
             ],

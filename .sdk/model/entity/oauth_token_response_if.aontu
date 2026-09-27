@@ -1,0 +1,45 @@
+# Entity: oauth_token_response_if
+
+main: kit: entity: oauth_token_response_if: {
+
+  alias: field: {}
+
+  name: "oauth_token_response_if"
+  op: {
+    create: {
+      name: "create"
+      points: [
+        {
+          co: {
+            id: "POST /oauth/2026-09/token"
+            source: "openapi3"
+            version: 2
+          }
+          m: "POST"
+          o: "/oauth/2026-09/token"
+          s: [
+            {
+              lit: "oauth"
+            }
+            {
+              lit: "2026-09"
+            }
+            {
+              lit: "token"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+  fields: {
+  }
+
+
+
+}

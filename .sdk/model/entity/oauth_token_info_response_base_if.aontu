@@ -1,0 +1,48 @@
+# Entity: oauth_token_info_response_base_if
+
+main: kit: entity: oauth_token_info_response_base_if: {
+
+  alias: field: {}
+
+  name: "oauth_token_info_response_base_if"
+  op: {
+    create: {
+      name: "create"
+      points: [
+        {
+          co: {
+            id: "POST /oauth/2026-09/token/introspect"
+            source: "openapi3"
+            version: 2
+          }
+          m: "POST"
+          o: "/oauth/2026-09/token/introspect"
+          s: [
+            {
+              lit: "oauth"
+            }
+            {
+              lit: "2026-09"
+            }
+            {
+              lit: "token"
+            }
+            {
+              lit: "introspect"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+  fields: {
+  }
+
+
+
+}

@@ -1,0 +1,48 @@
+# Entity: advanced
+
+main: kit: entity: advanced: {
+
+  alias: field: {}
+
+  name: "advanced"
+  op: {
+    create: {
+      name: "create"
+      points: [
+        {
+          co: {
+            id: "POST /oauth/2026-09/token/revoke"
+            source: "openapi3"
+            version: 2
+          }
+          m: "POST"
+          o: "/oauth/2026-09/token/revoke"
+          s: [
+            {
+              lit: "oauth"
+            }
+            {
+              lit: "2026-09"
+            }
+            {
+              lit: "token"
+            }
+            {
+              lit: "revoke"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+  fields: {
+  }
+
+
+
+}
